@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.galery{
+    display: flex;
+    flex-wrap:wrap;
+
+}
+.galery__img{
+    width: 300px;
+    object-fit: cover;
+}
+.galery__img:first-child{
+    flex-basis: 400px;
+}
+.galery__img:nth-child(4){
+    flex-basis: 100px;
+}
