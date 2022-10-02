@@ -1,0 +1,32 @@
+.padre{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(211, 99, 0);
+}
+.hijo{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(34, 1, 72);
+}
+.padre:hover .hijo{
+    animation: transicion 3s ease-in-out forwards;
+}
+@keyframes transicion{
+    0%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(calc(500px - 150px));
+    }
+    50%{
+        transform: translate(calc(500px - 150px),calc(500px - 150px));
+    }
+    75%{
+        transform: translateY(calc(500px - 150px));
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
