@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+h1{
+    margin: 20px;
+    text-align: center;
+    flex-basis: 100%;
+}
+.btn-modern{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(10, 0, 62);
+    box-shadow: -3px -3px 3px 2px rgb(67, 67, 67);
+    
+}
+.btn-modern:hover{
+    animation: hover_animation  0.4s forwards;
+}
+@keyframes hover_animation{
+    0%{
+
+    }
+    100%{
+        transform: translate(-5px,-5px);
+        box-shadow: 1px 1px  1px rgb(67, 67, 67);
+        background-color: rgb(1, 1, 26);
+        color: rgba(0, 255, 64, 0.744);
+    }
+}
