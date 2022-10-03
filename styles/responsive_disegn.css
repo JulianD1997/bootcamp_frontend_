@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0.3rem;
+    font-size: 1.1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-areas:"header header header"
+                        "main main main"
+                        "aside aside aside"
+                        "footer footer footer";
+    column-gap: 0.5rem;
+    row-gap: 0.6rem;
+}
+.header{
+    grid-area: header;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(32, 54, 110);
+}
+.main{
+    padding: 0.3rem;
+    grid-area: main;
+    text-align: justify;
+    background-color: rgb(245, 245, 245);
+}
+.aside{
+    grid-area:aside;
+    text-align: center;
+}
+.nav__list{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    text-transform: capitalize;
+}
+.nav__item{
+    background-color: rgb(15, 198, 239);
+    color: black;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.524);
+    text-decoration: none;
+    
+}
+.nav__item > a{
+    color: black;
+    text-decoration: none;
+}
+.nav__item:hover{
+    animation: hover_animation 200ms forwards;
+}
+.nav__item:hover > a{
+    color: rgb(255, 255, 0);
+    transition: 100ms;
+}
+.footer{
+    margin-top: 10px;
+    align-self: flex-end;
+    grid-area: footer;
+    text-align: center;
+}
+@keyframes hover_animation{
+    0%{
+        color: rgb(200, 162, 37);
+    }
+    100%{
+        transform: translate(2px,2px);
+        background-color: rgb(3, 152, 232); ;
+        color: rgb(255, 196, 0);
+        box-shadow: 0px 0px 1px rgba(0, 0, 0);
+    }
+}
+@media (min-width: 700px){
+    body{
+        font-size: 1.5rem;
+        grid-template-areas:"header header header"
+                        "aside main main"
+                        "aside main main"
+                        "footer footer footer";
+        column-gap: 20px;                
+    }
+    .nav__list{
+        min-height: 200px;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        justify-content: space-between;
+        text-transform: capitalize;
+    }
+}
