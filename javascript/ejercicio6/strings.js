@@ -27,5 +27,3 @@ console.log(notSpaces)
 
 let nameInString = student.includes(nameStudent)
 console.log(nameInString)
-
-
