@@ -1,3 +1,7 @@
+:root{
+    --color_verde:rgb(227, 227, 227) ;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -15,7 +19,7 @@ body{
     width: 150px;
     border: 10px solid transparent;
     border-radius: 8px;
-    background-color: rgb(26, 134, 26);
+    background-color: var(--color_verde);
     box-shadow: 0 0 2px 3px rgb(2, 71, 2);
     color: rgb(227, 227, 227);
     font-size: 18px;
@@ -46,4 +50,8 @@ body{
 }
 .btn-tooltip:hover .tooltip{
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+    
 }

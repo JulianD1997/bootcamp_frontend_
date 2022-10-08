@@ -107,7 +107,6 @@ button{
 }
 .form__container-user{
     display: flex;
-    flex-direction:row;
     align-items: center;
     gap: 20px;
 }
@@ -156,4 +155,12 @@ button{
     font-weight: 500;
     border:none;
     border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .form__container-user{
+        width: 100%;
+        flex-direction: column;
+
+    }
 }
