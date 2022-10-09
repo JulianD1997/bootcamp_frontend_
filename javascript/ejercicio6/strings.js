@@ -19,6 +19,9 @@ console.log(long)
 let firstLetterName = nameStudent.charAt(0)
 console.log(firstLetterName)
 
+let lastLetterLastName_ = lastName.slice(0,1)
+console.log(lastLetterLastName_)
+
 let lastLetterLastName = lastName.slice(-1)
 console.log(lastLetterLastName)
 
