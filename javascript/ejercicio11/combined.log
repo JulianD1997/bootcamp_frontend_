@@ -1,0 +1,20 @@
+{"level":"info","message":"Hola esto es info","service":"user-service"}
+{"level":"warn","message":"esto es una aleta","service":"user-service"}
+{"level":"error","message":"esto es un error","service":"user-service"}
+{"level":"info","message":"Hola esto es info","service":"user-service"}
+{"level":"debug","message":"esto es un debug","service":"user-service"}
+{"level":"warn","message":"esto es una alerta","service":"user-service"}
+{"level":"error","message":"esto es un error","service":"user-service"}
+{"level":"info","message":"Hola esto es info"}
+{"level":"debug","message":"esto es un debug"}
+{"level":"warn","message":"esto es una alerta"}
+{"level":"error","message":"esto es un error"}
+{"level":"info","message":"Hola esto es info"}
+{"level":"debug","message":"esto es un debug"}
+{"level":"warn","message":"esto es una alerta"}
+{"level":"error","message":"esto es un error"}
+{"level":"info","message":"Es un numero diferente de cero"}
+{"level":"error"}
+{"level":"error"}
+{"level":"error","message":"el valor es : error inventado"}
+{"level":"error","message":"error inventado"}
